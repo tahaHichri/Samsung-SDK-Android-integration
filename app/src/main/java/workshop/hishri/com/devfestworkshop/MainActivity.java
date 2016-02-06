@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
             if (info.getType() == Sgesture.TYPE_HAND_PRIMITIVE)
             {
 
-                Toast.makeText(getApplicationContext(), "Gesture detected | angle: "+info.getAngle(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Gesture detected | angle: "+info.getAngle()+" | speed :"+info.getSpeed(), Toast.LENGTH_SHORT).show();
 
                 if(info.getAngle() > 0 && info.getAngle() < 180 )
                 mViewPager.setCurrentItem(mViewPager.getCurrentItem() - 1);
@@ -141,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
         public void onStarted()
         {
             // user touches fingerprint sensor after startIdentify() calling
+            Toast.makeText(getApplicationContext(), "Reading ..", Toast.LENGTH_SHORT).show();
 
         }
 
