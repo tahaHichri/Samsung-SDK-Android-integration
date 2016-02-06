@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:background="@color/red"
+             tools:context="workshop.hishri.com.devfestworkshop.BlankFragment">
+
+	<!-- TODO: Update blank fragment layout -->
+	<TextView
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:textSize="22sp"
+			android:textColor="@color/white"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="@string/hello_blank_fragment"/>
+
+</LinearLayout>
